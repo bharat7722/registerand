@@ -12,7 +12,10 @@ export default function Register() {
 		validationSchema:yup.object({
 			name : yup.string().required("Please Enter Your Name"),
 			mobile:yup.string().required("Please Enter Your mobile"),
-			password:yup.string().required("Please Enter Your Password")
+			password:yup.string().required("Please Enter Your Password").matches(
+				/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+				"Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+			  )
 		}),
 		onSubmit:async(values,{resetForm})=>{
 			const {data} = await axios.post("http://localhost:5000/user",values)

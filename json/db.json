@@ -5,6 +5,24 @@
       "mobile": 9130469187,
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "Nitin Patil",
+      "mobile": 8080615655,
+      "password": "Pass@123",
+      "id": 2
+    },
+    {
+      "name": "Bharat Bhople",
+      "mobile": 6513541535,
+      "password": "Pass@123",
+      "id": 3
+    },
+    {
+      "name": "shiv",
+      "mobile": 7030304698,
+      "password": "Shiva@123",
+      "id": 4
     }
   ]
 }
